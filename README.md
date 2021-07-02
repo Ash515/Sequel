@@ -8,7 +8,7 @@ The general portal for publishing exam results at universities. Students can get
 
 ## Tech Stacks
 - Frontend - HTML, CSS, JavaScript, ReactJS.
-- Backend - Flask.
+- Backend - Python Flask.
 - Database - MySQL.
 
 ## Benifits for Contributors.
