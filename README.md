@@ -24,7 +24,7 @@ The general portal for publishing exam results at universities. Students can get
 - Work with correct directory.
 
 ## Contribution Programs
-- DevIncept Summer of Code 21 
+- DevIncept Summer of Code 21 ❤
 
 ## Developers ❤👨‍💻👩‍💻
 [Ashwin Kumar Ramaswamy](https://github.com/Ash515)
