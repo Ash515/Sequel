@@ -27,4 +27,5 @@ The general portal for publishing exam results at universities. Students can get
 - DevIncept Summer of Code 21 ❤
 
 ## Developers ❤👨‍💻👩‍💻
-[Ashwin Kumar Ramaswamy](https://github.com/Ash515)
+1. [Ashwin Kumar Ramaswamy](https://github.com/Ash515)
+2. [Payal Dutta]()
