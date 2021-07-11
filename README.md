@@ -29,3 +29,9 @@ The general portal for publishing exam results at universities. Students can get
 ## Developers ❤👨‍💻👩‍💻
 1. [Ashwin Kumar Ramaswamy](https://github.com/Ash515)
 2. [Payal Dutta]()
+
+<table>
+<tr>
+<td align="center"><a href="https://github.com/Ash515"><img src="https://avatars.githubusercontent.com/u/60146338?s=400&u=0efcf847bb1584e6653c26096e9855ed09d2a5ad&v=4" width="100px;" alt=""/><br /><sub><b>AkashSingh3031</b></sub></a><br /><a href="https://github.com/AkashSingh3031/The-Complete-FAANG-Preparation/commits?author=AkashSingh3031" title="Commits">💻</a> <a href="https://github.com/AkashSingh3031/The-Complete-FAANG-Preparation/graphs/contributors" title="Contribution Graph">✍️</a></td>
+ 
+<td align="center"><a href="https://github.com/Anuradha0501"><img src="https://avatars.githubusercontent.com/u/71958796?v=4" width="100px;" alt=""/><br /><sub><b>Anuradha0501</b></sub></a><br /><a href="https://github.com/AkashSingh3031/The-Complete-FAANG-Preparation/commits?author=Anuradha0501" title="Commits">💻</a> <a href="https://github.com/AkashSingh3031/The-Complete-FAANG-Preparation/graphs/contributors" title="Contribution Graph">✍️</a></td>
