@@ -186,6 +186,6 @@ git push -u origin <your_branch_name>
 > - Always keep a note of the deadline.
 
 
-*9.* Voila :exclamation: You have made a PR to the Face Mask Detection :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days.
+*9.* Voila :exclamation: You have made a PR to the ExamResultGenerator :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days.
 
 <p align="center"><img src="https://media.giphy.com/media/5mCQOcUfywmyI/giphy.gif" width=35%></p>
