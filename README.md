@@ -29,4 +29,5 @@ The general portal for publishing exam results at universities. Students can get
 ## Developers ❤👨‍💻👩‍💻
 1. [Ashwin Kumar Ramaswamy](https://github.com/Ash515)
 2. [Payal Dutta](https://github.com/payaldutta)
+3. [Swathi](https://github.com/swathi-469)
 
