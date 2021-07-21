@@ -1,0 +1,67 @@
+body{
+		
+		background-repeat: none;
+		background-color: white;
+	}
+
+.head{
+margin:0px;
+max-width: 60%;
+height: 40px;
+
+	}
+
+	header{
+	box-shadow:  0 8px 8px -4px lightblue;
+	color: grey;
+	padding-bottom: 5px;
+	height: 60px;
+}
+
+.one{
+	padding-top: 10px;
+	padding-left: 30px;
+	width: 60%;
+	align-content: left;
+	margin-top: 0;
+
+}
+.two{
+	margin-top: -40px;
+	padding-top: 10px;
+	width: 25%;
+	margin-left: 75%;
+	
+	padding-left: 10px;
+
+}
+
+
+
+button{
+	background-color: white;
+	border:none;
+	font-size: 20px;
+	max-width: 200px;
+	margin-right: 10px;
+	padding: 5px 10px 5px;
+}
+
+button:hover{
+	background-color: yellow;
+	border-radius: 5px;
+}
+.description{
+	color: #c0c0c0;
+	letter-spacing: 0.5px;
+	margin-top: 5%;
+}
+
+img{
+	width: 500px;
+	height: 300px;
+	
+	margin-top: 2%;
+	
+
+}
