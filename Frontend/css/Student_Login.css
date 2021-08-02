@@ -2,7 +2,7 @@ body{
 	margin:0;
 	margin-left: 200px;
 	color:#6a6f8c;
- background: url("student-login-bg.jpg") no-repeat;
+ background: url("https://raw.githubusercontent.com/simranquirky/ExamResultGenerator/master/Frontend/assets/student-login-bg.jpg") no-repeat;
  background-position: 20% 55%;
 
  backface-visibility: 
