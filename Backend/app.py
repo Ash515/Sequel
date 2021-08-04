@@ -5,6 +5,32 @@ from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 
+db = SQLAlchemy(app)
+
+class LoginModel(db.Model):
+    rno = db.Column(db.Integer, primary_key=True)
+    password = db.Column(db.String(10))
+
+    def __init__(self,rno,password):
+        self.rno = rno
+        self.password = password
+
+class StoreModel(db.Model):
+    rno = db.Column(db.Integer, primary_key=True)
+    phy = db.Column(db.Integer, positive=True)
+    chem = db.Column(db.Integer,positive=True)
+    maths = db.Column(db.Integer,positive=True)
+    bio = db.Column(db.Integer,positive=True)
+
+    def __init__(self,phy,chem,maths,bio):
+        self.phy = phy
+        self.chem = chem
+        self.maths = maths
+        self.bio = bio
+    
+
+
+
 @app.route('/')
 def index():
     return "Hello From Flask Here"
