@@ -5,37 +5,32 @@ from flask_cors import CORS, cross_origin
 
 
 app = Flask(__name__)
-
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///student_results.db"
 db = SQLAlchemy(app)
 
 
 class StudentLoginModel(db.Model):
-    rno = db.Column(db.Integer, primary_key=True)
-    password = db.Column(db.String(10))
-   
-
-    def __init__(self,rno,password):
-        self.rno = rno
-        self.password = password
-
-
-class FacultyLoginModel(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    password1 = db.Column(db.String(10))
+    password = db.Column(db.String(10))
+    student = db.Column(db.String(10))
+    faculty = db.Column(db.String(10))
    
 
-    def __init__(self,id,password1):
+    def __init__(self,id,password,student,faculty):
         self.id = id
-        self.password1 = password1
+        self.password = password
+        self.student = student
+        self.faculty = faculty
+
         
 
 
 class StoreModel(db.Model):
     rno = db.Column(db.Integer, primary_key=True)
-    phy = db.Column(db.Integer, positive=True)
-    chem = db.Column(db.Integer,positive=True)
-    maths = db.Column(db.Integer,positive=True)
-    eng = db.Column(db.Integer,positive=True)
+    phy = db.Column(db.Integer)
+    chem = db.Column(db.Integer)
+    maths = db.Column(db.Integer)
+    eng = db.Column(db.Integer)
 
     def __init__(self,phy,chem,maths,eng):
         self.phy = phy
