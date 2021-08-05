@@ -3,17 +3,32 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS, cross_origin
 
 
+
 app = Flask(__name__)
 
 db = SQLAlchemy(app)
 
-class LoginModel(db.Model):
+
+class StudentLoginModel(db.Model):
     rno = db.Column(db.Integer, primary_key=True)
     password = db.Column(db.String(10))
+   
 
     def __init__(self,rno,password):
         self.rno = rno
         self.password = password
+
+
+class FacultyLoginModel(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    password1 = db.Column(db.String(10))
+   
+
+    def __init__(self,id,password1):
+        self.id = id
+        self.password1 = password1
+        
+
 
 class StoreModel(db.Model):
     rno = db.Column(db.Integer, primary_key=True)
