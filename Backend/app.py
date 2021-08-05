@@ -20,13 +20,13 @@ class StoreModel(db.Model):
     phy = db.Column(db.Integer, positive=True)
     chem = db.Column(db.Integer,positive=True)
     maths = db.Column(db.Integer,positive=True)
-    bio = db.Column(db.Integer,positive=True)
+    eng = db.Column(db.Integer,positive=True)
 
-    def __init__(self,phy,chem,maths,bio):
+    def __init__(self,phy,chem,maths,eng):
         self.phy = phy
         self.chem = chem
         self.maths = maths
-        self.bio = bio
+        self.eng = eng
     
 
 
