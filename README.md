@@ -32,4 +32,5 @@ The general portal for publishing exam results at universities. Students can get
 3. [Payal Dutta](https://github.com/payaldutta)
 4. [Swathi](https://github.com/swathi-469)
 5. [Simran Kumari](https://github.com/simranquirky)
+6. [Dilrose Reji](https://github.com/dilroseR)
 
