@@ -3,7 +3,43 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS, cross_origin
 
 
+
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///student_results.db"
+db = SQLAlchemy(app)
+
+
+class StudentLoginModel(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    password = db.Column(db.String(10))
+    student = db.Column(db.String(10))
+    faculty = db.Column(db.String(10))
+   
+
+    def __init__(self,id,password,student,faculty):
+        self.id = id
+        self.password = password
+        self.student = student
+        self.faculty = faculty
+
+        
+
+
+class StoreModel(db.Model):
+    rno = db.Column(db.Integer, primary_key=True)
+    phy = db.Column(db.Integer)
+    chem = db.Column(db.Integer)
+    maths = db.Column(db.Integer)
+    eng = db.Column(db.Integer)
+
+    def __init__(self,phy,chem,maths,eng):
+        self.phy = phy
+        self.chem = chem
+        self.maths = maths
+        self.eng = eng
+    
+
+
 
 @app.route('/')
 def index():
