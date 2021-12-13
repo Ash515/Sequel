@@ -25,6 +25,7 @@ The general portal for publishing exam results at universities. Students can get
 
 ## Contribution Programs
 - DevIncept Summer of Code 21 ❤
+- Script Winter of Code 21 ❤
 
 ## Developers ❤👨‍💻👩‍💻
 1. [Ashwin Kumar Ramaswamy](https://github.com/Ash515)
