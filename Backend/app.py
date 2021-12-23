@@ -9,6 +9,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///student_results.db"
 db = SQLAlchemy(app)
 
+#schema definition
 
 class StudentLoginModel(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -70,6 +71,6 @@ def check():
 
 	
     
-if __name__ == '__main__':
+if __name__ == '__main__':   
     app.run(host="0.0.0.0", debug=True, port=5000)
 
