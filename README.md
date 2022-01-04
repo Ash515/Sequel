@@ -122,4 +122,5 @@ git push origin YourBranchName
 5. [Simran Kumari](https://github.com/simranquirky)
 6. [Dilrose Reji](https://github.com/dilroseR)
 7. [Surbhi Shekhar](https://github.com/ssurbhi09)
+8. [Sohil Kanduja](https://github.com/sohilkhanduja)
 
