@@ -7,6 +7,7 @@ import json
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///student_results.db"
+app.config["JSON_SORT_KEYS"] = False
 db = SQLAlchemy(app)
 CORS(app)
 
@@ -96,6 +97,47 @@ def addresult():
     except Exception as e:
         con.rollback()
         return jsonify({"msg": "There's some issue: " + str(e)})
+    finally:
+        if con is not None:
+            con.close()
+
+
+@app.route("/return_result", methods=['POST'])
+def return_result():
+    if request.method == 'GET':
+        return jsonify({"msg": "Use 'POST' method for this API."})
+
+    data = json.loads(request.get_json())
+    student_id = data["id"]
+    user_type = data["type"]
+
+    if user_type.lower() != 'student':
+        return jsonify({"msg": "Invalid user type"})
+
+    con = None
+    try:
+        con = connect('student_results.db')
+        cursor = con.cursor()
+        cursor.execute("SELECT * FROM StoreModel WHERE rno = '%d'" % student_id)
+        data = cursor.fetchall()
+
+        if not data:
+            return jsonify({"msg": "Marks details not uploaded yet."})
+
+        return jsonify(
+            {
+                "id": data[0][0],
+                "phy": data[0][1],
+                "chem": data[0][2],
+                "maths": data[0][3],
+                "eng": data[0][4]
+            }
+        )
+
+    except Exception as e:
+        con.rollback()
+        return jsonify({"msg": "There's some issue: " + str(e)})
+
     finally:
         if con is not None:
             con.close()
