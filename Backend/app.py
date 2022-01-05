@@ -7,6 +7,7 @@ import json
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///student_results.db"
+app.config["JSON_SORT_KEYS"] = False
 db = SQLAlchemy(app)
 CORS(app)
 
@@ -115,7 +116,7 @@ def return_result():
 
     con = None
     try:
-        con = connect("student_results.db")
+        con = connect('student_results.db')
         cursor = con.cursor()
         cursor.execute("SELECT * FROM StoreModel WHERE rno = '%d'" % student_id)
         data = cursor.fetchall()
@@ -125,11 +126,11 @@ def return_result():
 
         return jsonify(
             {
-                "id": data[0],
-                "sub1": data[1],
-                "sub2": data[2],
-                "sub3": data[3],
-                "sub4": data[4]
+                "id": data[0][0],
+                "phy": data[0][1],
+                "chem": data[0][2],
+                "maths": data[0][3],
+                "eng": data[0][4]
             }
         )
 
