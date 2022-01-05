@@ -101,5 +101,46 @@ def addresult():
             con.close()
 
 
+@app.route("/return_result", methods=['POST'])
+def return_result():
+    if request.method == 'GET':
+        return jsonify({"msg": "Use 'POST' method for this API."})
+
+    data = json.loads(request.get_json())
+    student_id = data["id"]
+    user_type = data["type"]
+
+    if user_type.lower() != 'student':
+        return jsonify({"msg": "Invalid user type"})
+
+    con = None
+    try:
+        con = connect("student_results.db")
+        cursor = con.cursor()
+        cursor.execute("SELECT * FROM StoreModel WHERE rno = '%d'" % student_id)
+        data = cursor.fetchall()
+
+        if not data:
+            return jsonify({"msg": "Marks details not uploaded yet."})
+
+        return jsonify(
+            {
+                "id": data[0],
+                "sub1": data[1],
+                "sub2": data[2],
+                "sub3": data[3],
+                "sub4": data[4]
+            }
+        )
+
+    except Exception as e:
+        con.rollback()
+        return jsonify({"msg": "There's some issue: " + str(e)})
+
+    finally:
+        if con is not None:
+            con.close()
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
