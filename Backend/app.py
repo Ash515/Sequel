@@ -1,8 +1,13 @@
+import sqlite3
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from sqlite3 import connect
 import json
+
+from sqlalchemy.orm import session
+# from app import app
+# from app import routes, models
 
 
 app = Flask(__name__)
@@ -99,6 +104,42 @@ def addresult():
     finally:
         if con is not None:
             con.close()
+
+
+@app.route('/login',methods=["POST","GET"])
+def login():
+    r=""
+    msg=""
+    
+    # data = json.loads(request.get_json())
+    if request.method=="POST":
+        username=request.form['username']
+        password=request.form['password']
+        # print(data["username"])
+        # username=1
+        # password="1234"
+        conn=sqlite3.connect("student_results.db")
+        c=conn.cursor()
+        
+        c.execute("SELECT * FROM  StudentLoginModel WHERE id='"+username+"' and password='"+password+"'")
+        r=c.fetchall()
+
+        for i in r:
+            if(username==i[0] and 'password'==i[1]):
+                session["logedin"]=True
+                session["username"]=username
+                return r;
+            else:
+                return "Invalid username and password"
+    else:
+        return "Please fill the complete form"
+
+
+       
+
+    
+
+
 
 
 if __name__ == "__main__":
