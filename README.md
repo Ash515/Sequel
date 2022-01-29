@@ -124,4 +124,5 @@ git push origin YourBranchName
 7. [Surbhi Shekhar](https://github.com/ssurbhi09)
 8. [Sohil Kanduja](https://github.com/sohilkhanduja)
 9. [Nawed Ali](https://github.com/nawed2611)
+10. [Prateek Mohanty](https://github.com/prateekmohanty63)
 
