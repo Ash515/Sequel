@@ -113,6 +113,12 @@ git push origin YourBranchName
 ## Contribution Programs
 - DevIncept Summer of Code 21 ❤
 - Script Winter of Code 21 ❤
+- SLoP 2.0 Semester Long Project 
+
+
+## Communication Medium
+
+[![Gitter](https://badges.gitter.im/ExamResultGenerator/community.svg)](https://gitter.im/ExamResultGenerator/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
 
 ## Developers ❤👨‍💻👩‍💻
 1. [Ashwin Kumar Ramaswamy](https://github.com/Ash515)
