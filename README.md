@@ -106,7 +106,7 @@ git push origin YourBranchName
 
 <p align="center">
 
-[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/unnati914/Care4ther-) [![Join the chat at https://gitter.im/ExamResultGenerator/community](https://badges.gitter.im/ExamResultGenerator/community.svg)](https://gitter.im/ExamResultGenerator/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/unnati914/Care4ther-) 
 
 </p>
 
