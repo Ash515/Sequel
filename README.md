@@ -120,6 +120,8 @@ git push origin YourBranchName
 
 [![Gitter](https://badges.gitter.im/ExamResultGenerator/community.svg)](https://gitter.im/ExamResultGenerator/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
 
+[![Relative date](https://img.shields.io/date/1577392258?color=important&label=started&logo=github)](https://github.com/Ash515/)
+
 ## Developers ❤👨‍💻👩‍💻
 1. [Ashwin Kumar Ramaswamy](https://github.com/Ash515)
 2. [Abhijeet Chaterjee](https://github.com/abhijeet007rocks8)
