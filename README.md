@@ -113,7 +113,7 @@ git push origin YourBranchName
 ## Contribution Programs
 - DevIncept Summer of Code 21 ❤
 - Script Winter of Code 21 ❤
-- SLoP 2.0 Semester Long Project 
+- SLoP 2.0 Semester Long Project ❤
 
 
 ## Communication Medium
