@@ -126,13 +126,14 @@ git push origin YourBranchName
 [![Relative date](https://img.shields.io/date/1577392258?color=important&label=started&logo=github)](https://github.com/Ash515/)
 
 ## Developers ❤👨‍💻👩‍💻
-1. [Abhijeet Chaterjee](https://github.com/abhijeet007rocks8)
-2. [Payal Dutta](https://github.com/payaldutta)
-3. [Swathi](https://github.com/swathi-469)
-4. [Simran Kumari](https://github.com/simranquirky)
-5. [Dilrose Reji](https://github.com/dilroseR)
-6. [Surbhi Shekhar](https://github.com/ssurbhi09)
-7. [Sohil Kanduja](https://github.com/sohilkhanduja)
-8. [Nawed Ali](https://github.com/nawed2611)
-9. [Prateek Mohanty](https://github.com/prateekmohanty63)
+1. [Ashwin Kumar Ramaswamy](https://github.com/Ash515)
+2. [Abhijeet Chaterjee](https://github.com/abhijeet007rocks8)
+3. [Payal Dutta](https://github.com/payaldutta)
+4. [Swathi](https://github.com/swathi-469)
+5. [Simran Kumari](https://github.com/simranquirky)
+6. [Dilrose Reji](https://github.com/dilroseR)
+7. [Surbhi Shekhar](https://github.com/ssurbhi09)
+8. [Sohil Kanduja](https://github.com/sohilkhanduja)
+9. [Nawed Ali](https://github.com/nawed2611)
+10. [Prateek Mohanty](https://github.com/prateekmohanty63)
 
