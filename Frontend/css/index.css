@@ -1,75 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar{
+  position: fixed;
+  width: 250px;
+  left: -250px;
+  height: 100%;
+  background: #f3f0f0;
+  transition: all .5s ease;
+}
+
+l
+.html {
+  font-size: 62.5%;
+}
 
 body {
-	overflow-x: hidden;
-	font-family: 'Outfit', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 
-header {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	color: rgb(110, 107, 107);
-	margin: 0 0 1rem;
-	padding: 1rem;
-	border-bottom: 1px solid black;
-	border-radius: 6px;
-	background-color: #f3f0e9;
-	height: 12vh;
-	box-shadow: 2px 3px 2px rgb(201, 201, 204);
-	backdrop-filter: blur(12px);
+/* ///////////..utility classes../////////// */
 
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
 }
 
-.one {
-	display: flex;
-	flex-wrap: wrap;
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
 }
 
-.two {
-	display: flex;
-	flex-wrap: wrap;
+.btn-primary {
+  color: #fff;
+  background:rgba(247, 222, 3, 0.952);
 }
 
-button {
-	border-radius: 6px;
-	border: none;
-	font-size: 1.2rem;
-	max-width: 200px;
-	margin: 1rem;
-	padding: 12px;
-	font-family: 'Outfit', sans-serif;
-	background-color: rgba(235, 235, 215, 0.74);
-}
-
-button:hover {
-	background-color: rgba(255, 255, 0, 0.74);
-	cursor: pointer;
-}
-
-.description {
-	color: #838080;
-	letter-spacing: 0.5px;
-	display: flex;
-	margin: 2rem;
-	padding: 2rem;
-	background-image: radial-gradient(#4f4f57ce 0.5px, #ffffff59 0.5px);
-	background-size: 10px 10px;
+.btn-primary:hover {
+  background:rgba(255, 255, 0, 0.74);
+  transition: background 0.3s ease-in-out;
 }
 
 
-.intro-text {
-	display: flex;
-	flex-direction: column;
-	margin: 1rem;
-	padding: 1rem;
+/* ............//// Showcase styling ////......... */
+
+.showcase-area {
+  height: 50vh;
+  background: linear-gradient(
+      rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)
+    ),
+    url("https://img.freepik.com/free-vector/hand-drawn-flat-design-book-spine_23-2149320036.jpg?w=2000");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-img {
-	padding: 1rem;
-	border-left: 2px solid rgba(0, 0, 0, 0.377);
-	width: 500px;
-	height: 300px;
-	margin-top: 2%;
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
 }
+
+.main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+
+/* ......//about us//...... */
+
+#about {
+  padding: 50px 0;
+  background: #f5f5f7;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about h2 {
+  font-size: 2.3rem;
+}
+
+
+
+#about .small {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.about-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-img img {
+  display: block;
+  height: 400px;
+  max-width: 200%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+}
+
+
+
+
+
+
